@@ -20,6 +20,7 @@ form{display:grid;gap:12px;max-width:560px}label{font-weight:600;font-size:.95re
 input,textarea{width:100%;padding:11px;border:1px solid #cdd5e0;border-radius:8px;font:inherit;background:#fff}
 button{background:#1f6fb2;color:#fff;border:0;padding:13px;border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer}
 #ok{display:none;background:#e5f6ea;border:1px solid #9fd7ae;padding:14px;border-radius:8px;margin-bottom:16px}
+.pay{display:inline-block;margin-top:12px;background:#635bff;color:#fff;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none}.pay:hover{opacity:.9}
 footer{text-align:center;color:#7a8394;font-size:.9rem;padding:28px 0}
 @media(max-width:600px){h1{font-size:1.6rem}header{padding:44px 0}}
 </style>
@@ -42,13 +43,18 @@ footer{text-align:center;color:#7a8394;font-size:.9rem;padding:28px 0}
 <section style="background:#eef3f9"><div class="wrap">
 <h2>收费标准<small>Pricing</small></h2>
 <div class="grid">
-<div class="card"><h3>按天 / Per day</h3><div class="price">$72 <span>/ 天 · day</span></div></div>
-<div class="card"><h3>包月 / Monthly retainer</h3><div class="price">$1,680 <span>/ 月 · month</span></div></div>
+<div class="card"><h3>按天 / Per day</h3><div class="price">$72 <span>/ 天 · day</span></div><a class="pay" href="https://buy.stripe.com/eVqaEX4fp44Ub0J5gP4AU00" target="_blank" rel="noopener">刷卡支付 / Pay by card</a></div>
+<div class="card"><h3>包月 / Monthly retainer</h3><div class="price">$1,680 <span>/ 月 · month</span></div><a class="pay" href="https://buy.stripe.com/4gM4gzbHR30Q8SBdNl4AU01" target="_blank" rel="noopener">刷卡支付 / Pay by card</a></div>
 </div>
 </div></section>
 
 <section id="payment"><div class="wrap">
 <h2>付款方式<small>Payment</small></h2>
+<div class="card" style="max-width:640px;margin-bottom:18px">
+<h3>刷卡支付 / Pay by card</h3>
+<p><a class="pay" href="https://buy.stripe.com/eVqaEX4fp44Ub0J5gP4AU00" target="_blank" rel="noopener">按天 $72 · 刷卡支付 / Pay by card – Daily</a> &nbsp; <a class="pay" href="https://buy.stripe.com/4gM4gzbHR30Q8SBdNl4AU01" target="_blank" rel="noopener">包月 $1,680 · 刷卡支付 / Pay by card – Monthly</a></p>
+<p>付款前请先通过下方表单咨询确认金额。<br><span class="en">Please contact via the form below to confirm the amount before paying.</span></p>
+</div>
 <div class="card" style="max-width:640px">
 <h3>BNB（BNB Smart Chain / BEP-20）</h3>
 <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
