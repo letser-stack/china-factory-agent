@@ -47,6 +47,19 @@ footer{text-align:center;color:#7a8394;font-size:.9rem;padding:28px 0}
 </div>
 </div></section>
 
+<section id="payment"><div class="wrap">
+<h2>付款方式<small>Payment</small></h2>
+<div class="card" style="max-width:640px">
+<h3>BNB（BNB Smart Chain / BEP-20）</h3>
+<div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+<code id="addr" style="font-family:ui-monospace,Menlo,Consolas,monospace;background:#f1f4f8;padding:10px;border-radius:8px;word-break:break-all;flex:1;min-width:220px">0x8aa5dc9e42d66b3504eb26eb64d876c6ba6d7a5c</code>
+<button type="button" id="copybtn" style="padding:10px 16px">复制 / Copy</button>
+</div>
+<p>付款前请先通过下方表单咨询确认金额。<br><span class="en">Please contact via the form below to confirm the amount before paying.</span></p>
+<p>请在付款前确认网络为 BNB Smart Chain。<br><span class="en">Please double-check the network (BNB Smart Chain) before sending.</span></p>
+</div>
+</div></section>
+
 <section id="contact"><div class="wrap">
 <h2>欢迎咨询<small>Contact</small></h2>
 <div id="ok">感谢您的咨询，我会尽快回复！<br>Thank you for your inquiry — I'll get back to you soon.</div>
@@ -64,4 +77,5 @@ footer{text-align:center;color:#7a8394;font-size:.9rem;padding:28px 0}
 </div></section>
 <footer>© 2026 Lester · 中国工厂代理人 / China Factory Agent</footer>
 <script>if(new URLSearchParams(location.search).get('ok')==='1'){var o=document.getElementById('ok');o.style.display='block';o.scrollIntoView();}</script>
+<script>document.getElementById('copybtn').onclick=function(){var t=document.getElementById('addr').textContent,b=this;function d(){b.textContent='已复制 / Copied';setTimeout(function(){b.textContent='复制 / Copy'},2000)}if(navigator.clipboard){navigator.clipboard.writeText(t).then(d,function(){f()})}else f();function f(){var r=document.createRange();r.selectNodeContents(document.getElementById('addr'));var x=getSelection();x.removeAllRanges();x.addRange(r);document.execCommand('copy');d()}};</script>
 </body></html>
